@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventorydelivery"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:maxSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" android:persistent="false">
+        <activity
+            android:name="com.inventorydelivery.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.inventorydelivery.LoginActivity" >
+        </activity>
+        
+       
+        <activity android:name="com.inventorydelivery.HomeActivity" >
+        </activity>
+         <activity android:name="com.inventorydelivery.Cash_DetailsActivity" >
+        </activity>
+        <activity android:name="com.inventorydelivery.DetailsActivity" >
+        </activity>
+        <activity android:name="InventoryActivity"></activity>
+         <activity android:name="Inv_StockFillActivity"></activity>
+        
+        
+    </application>
+
+</manifest>
